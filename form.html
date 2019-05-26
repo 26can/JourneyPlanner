@@ -1,7 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en" dir="ltr" xmlns:og="http://ogp.me/ns#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
 <body>
 
+  <div class="pane-content">
+    <form class="hsl-reittiopas-routesearch-form" action="." method="get" id="reittiopas-search-extended-form" accept-charset="UTF-8">
+      <div>
+        <div id="search-from"><label>From?</label>
+          <div class="form-item form-type-textfield form-item-from-in">
+  <label for="edit-from-in">From? – Street address or a place </label>
+ <input type="text" id="edit-from-in" name="from_in" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div id="search-to"><label>To?</label><div class="form-item form-type-textfield form-item-to-in">
+  <label for="edit-to-in">To? – Street address or a place </label>
+ <input type="text" id="edit-to-in" name="to_in" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div id="search-time"><label>Time</label><div class="form-item form-type-numberfield form-item-hour">
+ <input placeholder="hh" pattern="[0-9]*" type="number" id="edit-hour" name="hour" value="" step="1" min="0" max="23" class="form-text form-number" />
+</div>
+<div class="form-item form-type-numberfield form-item-minute">
+ <input placeholder="mm" pattern="[0-9]*" type="number" id="edit-minute" name="minute" value="" step="1" min="0" max="59" class="form-text form-number" />
+</div>
+<div class="form-item form-type-radios form-item-timetype">
+  <label for="edit-timetype">Arrival/Departure </label>
+ <div id="edit-timetype" class="form-radios"><div class="form-item form-type-radio form-item-timetype">
+ <input type="radio" id="edit-timetype-departure" name="timetype" value="departure" checked="checked" class="form-radio" />
+ <label class="option" for="edit-timetype-departure">Departure time </label>
+
+</div>
+<div class="form-item form-type-radio form-item-timetype">
+ <input type="radio" id="edit-timetype-arrival" name="timetype" value="arrival" class="form-radio" />
+ <label class="option" for="edit-timetype-arrival">Arrival time </label>
+
+</div>
+</div>
+</div>
+</div><div id="search-date">
+  <label>Date</label>
+  <div class="form-item form-type-radios form-item-todaytomorrow">
+  <label for="edit-todaytomorrow">Date </label>
+ <div id="edit-todaytomorrow" class="form-radios">
+   <div class="form-item form-type-radio form-item-todaytomorrow">
+ <input type="radio" id="edit-todaytomorrow-today" name="todaytomorrow" value="today" checked="checked" class="form-radio" />
+  <label class="option" for="edit-todaytomorrow-today">Today </label>
+
+</div>
+<div class="form-item form-type-radio form-item-todaytomorrow">
+ <input type="radio" id="edit-todaytomorrow-tomorrow" name="todaytomorrow" value="tomorrow" class="form-radio" />
+  <label class="option" for="edit-todaytomorrow-tomorrow">Tomorrow </label>
+
+</div>
+<div class="form-item form-type-radio form-item-todaytomorrow">
+ <input type="radio" id="edit-todaytomorrow-other" name="todaytomorrow" value="other" class="form-radio" />
+ <label class="option" for="edit-todaytomorrow-other">Other </label>
+
+</div>
+</div>
+</div>
+<div id="search-daymonthyear">
+  <label>Other</label>
+  <div class="form-item form-type-textfield form-item-daymonthyear">
+  <label class="element-invisible" for="edit-daymonthyear">Day </label>
+ <input class="hsl-datepicker form-text" type="text" id="edit-daymonthyear" name="daymonthyear" value="" size="10" maxlength="10" />
+</div>
+</div>
+</div>
+<div id="edit-bikesubmit" class="form-item form-type-item">
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search route" class="form-submit" />
+<input type="hidden" name="form_build_id" value="form-4cVfbDYx48EGF0nMsjlLIulz4lpUik2wdL4wi1VwFIo" />
+<input type="hidden" name="form_id" value="reittiopas_search_extended_form" />
+</div>
+  </form>
+</div>
 
 <form id="myForm" action="/action_page.php">
   origin:      <input type="text" id="origin" value="origin"><br>
